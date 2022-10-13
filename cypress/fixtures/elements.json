@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Web Logo",
+    "class": ".theLogo"
+  },
+  {
+    "name": "Search Field",
+    "class": ".theSearch"
+  },
+  {
+    "name": "Customer Menu",
+    "class": ".theCustomerMenu"
+  },
+  {
+    "name": "Main Menu",
+    "class": ".theCustomerMenu"
+  },
+  {
+    "name": "Cart Total",
+    "class": ".basketTotal"
+  },
+  {
+    "name": "Promo",
+    "class": ".featurePromo"
+  },
+  {
+    "name": "Carousel",
+    "class": ".heroCarousel"
+  },
+  {
+    "name": "Whats Hot",
+    "class": ".productCategory"
+  },
+  {
+    "name": "Title Layout",
+    "class": ".tileLayout"
+  },
+  {
+    "name": "Footer",
+    "class": ".footerContainer"
+  },
+  {
+    "name": "Product Title",
+    "class": "h1"
+  },
+  {
+    "name": "Style Number",
+    "class": ".prodStyle"
+  },
+  {
+    "name": "Product Quantity",
+    "class": "#qtyAlias"
+  },
+  {
+    "name": "Add to Basket Button",
+    "class": "b > img"
+  },
+  {
+    "name": "Product Description",
+    "class": ".descriptionPane"
+  },
+  {
+    "name": "Product Images",
+    "class": "#zoom1 > img"
+  }
+]

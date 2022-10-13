@@ -1,0 +1,43 @@
+{
+  "name": "insidestore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:allnorecord": "cypress run --config video=false,trashAssetsBeforeRuns=true --headless --spec \"**/*.feature\"",
+    "test:all": "cypress run --spec \"**/*.feature\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^12.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.3",
+    "@faker-js/faker": "^7.5.0",
+    "cypress": "^10.9.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "esbuild": "^0.14.54"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/tests/**/*.js",
+      "cypress/tests/[filepath].js",
+      "cypress/tests/[filepath]/../common.js",
+      "cypress/step_definitions/**/*.js"
+    ],
+    "filterSpecs": true,
+    "json": {
+      "enabled": false,
+      "output": "report/json/log.json",
+      "formatter": "cucumber-json-formatter"
+    },
+    "messages": {
+      "enabled": false,
+      "output": "report/json/messages.ndjson"
+    },
+    "html": {
+      "enabled": true,
+      "output": "report/html/cucumber-report.html"
+    }
+  }
+}
