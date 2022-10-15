@@ -47,6 +47,8 @@ if (fs.existsSync("cypress.env.json")) {
 module.exports = defineConfig({
   e2e: {
     baseUrl: baseUrl,
+    viewportWidth: 1536,
+    viewportHeight: 960,
     specPattern: "cypress/tests/**/*.feature",
     supportFile: "cypress/support/e2e.js",
     env: environmentVars,
@@ -59,4 +61,6 @@ module.exports = defineConfig({
   },
 
   pageLoadTimeout: 990000,
+  requestTimeout: 10000,
+  chromeWebSecurity: false,
 });
